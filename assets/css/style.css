@@ -8,23 +8,9 @@
     --gray-700: #ffffff;
     --gray-500: #6b7280;
 }
-/* Hero Section */
-.hero-section {
-    min-height: 100vh;
-    position: relative;
-}
-
-.bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
 
 /* Overlay: Lebih Ringan Agar Teks Terbaca */
- overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -224,44 +210,197 @@ section {
     color: #bbb;
 }
 
-/* Team Member Cards */
+.team-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.top-member {
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 200px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.team-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #121212;
+  color: white;
+}
+
+.top-member {
+  margin-bottom: 30px;
+  width: 250px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.top-member:hover {
+  transform: scale(1.05);
+}
+
+.team-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #121212;
+  color: white;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.yasser-card {
+  width: 250px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.leader-label {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.badge {
+  display: block;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #121212;
+  color: white;
+}
+
+.top-member {
+  margin-bottom: 30px;
+  width: 250px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.top-member:hover {
+  transform: scale(1.05);
+}
+
+.leader-badge {
+  display: block;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 5px 0 0;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
 .team-member {
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    background: #222;
-    padding: 1rem;
-    margin: 0 0.5rem;
+  width: 200px;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  text-align: center;
 }
-.team-member img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #0d6efd;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
+
+.team-member:hover {
+  transform: translateY(-5px);
 }
-.team-member:hover img {
-    transform: scale(1.05);
-    border-color: #dc3545;
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
-.team-member h5 {
-    font-size: 1.1rem;
-    color: white;
-    margin: 0;
-    font-weight: 600;
+
+h3 {
+  font-size: 1.1rem;
+  margin: 0;
 }
-.team-member p {
-    color: #aaa;
-    font-size: 0.9rem;
-    margin: 0.3rem 0 0;
+
+p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 5px 0 0;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  object-fit: cover;
 }
 
 /* Form Kontak */
@@ -323,7 +462,21 @@ a {
 a:hover {
     color: #dc3545;
 }
+footer .social-icon {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #0066ff; /* warna default */
+  color: #fff;
+  transition: background 0.3s ease;
+}
 
+footer .social-icon:hover {
+  background: #dc3545; /* efek hover */
+}
 /* Responsif Tambahan */
 @media (max-width: 768px) {
     .hero-section h1 {
@@ -349,17 +502,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     color: white;
-}
-
-.bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
                 url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat;
-    z-index: -1;
 }
 
 /* Pastikan teks muncul di atas */
@@ -435,4 +579,3 @@ a:hover {
         font-size: 1rem;
     }
 }
-
